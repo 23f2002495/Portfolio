@@ -5,7 +5,7 @@
 export const skillCategories = [
   {
     id: "programming",
-    title: "Programming",
+    title: "Programming Skills",
     skills: [
       { name: "C", icon: "/skills/c.png" },
       { name: "C++", icon: "/skills/cpp.png" },
@@ -17,7 +17,7 @@ export const skillCategories = [
 
   {
     id: "webdev",
-    title: "Web Dev",
+    title: "WebDev Skills",
     skills: [
       { name: "Next.js", icon: "/skills/next.png" },
       { name: "React", icon: "/skills/react.png" },
@@ -37,7 +37,7 @@ export const skillCategories = [
 
   {
     id: "aiml",
-    title: "AI / ML",
+    title: "AI/ML Skills",
     skills: [
       { name: "PyTorch", icon: "/skills/pytorch.png" },
       { name: "TensorFlow", icon: "/skills/tensorflow.png" },

@@ -50,7 +50,7 @@ export default function ContactSection() {
 
           {/* RESUME BUTTON */}
           <a
-            href="/resume.pdf"
+            href="/Resume (2).pdf"
             className="inline-block mt-4 px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium hover:scale-105 transition"
           >
             My Resume
