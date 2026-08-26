@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply text-white;
+  background: radial-gradient(
+      circle at top,
+      rgba(139, 92, 246, 0.18),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #090617 0%,
+      #140B2E 50%,
+      #090617 100%
+    );
+}

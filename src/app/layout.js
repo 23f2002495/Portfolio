@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import { Providers } from "./providers";
-
+import { LenisProvider } from "../context/LenisContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,21 +14,39 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Providers>
-          <div className="min-h-screen bg-gradient-to-b from-[#c8acef] to-[#4f5397] text-white">
+    <body className={inter.className}>
+      <Providers>
+        <LenisProvider>
 
-            <header className="h-24">
-              <Navbar />
-            </header>
+        <div
+        className="
+        fixed
+        top-0
+        left-0
+        right-0
+        z-50
+        flex
+        justify-center
+        pt-6
+        pointer-events-none
+        "
+        >
 
-            <main className="min-h-[calc(100vh-6rem)] flex items-center justify-center">
-              {children}
-            </main>
+        <div className="pointer-events-auto w-full flex justify-center">
 
-          </div>
-        </Providers>
-      </body>
+        <Navbar/>
+
+        </div>
+
+        </div>
+
+          <main className="pt-20">
+            {children}
+          </main>
+
+        </LenisProvider>
+      </Providers>
+    </body>
     </html>
   );
 }

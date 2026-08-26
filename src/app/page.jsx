@@ -1,10 +1,31 @@
-const Homepage = () => {
-  return (
-    <div>
-      <h1>Hi, I'm Rwiddhi Mitra</h1>
-      <p>Building AI and Web Applications</p>
-    </div>
-  );
-};
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects/project";
+import Experience from "@/components/Experience/Experience";
 
-export default Homepage;
+import Skills from "@/components/Skills/skills";
+
+import Contact from "@/components/Contact/contactSection";
+
+export default function Home() {
+  return (
+    <>
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+    
+      <Experience />
+
+      <Skills />
+      <section id="contact">
+        <Contact />
+      </section>
+    </>
+  );
+}
