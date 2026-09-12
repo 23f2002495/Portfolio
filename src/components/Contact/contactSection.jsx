@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import ContactForm from "./contactForm";
-import Footer from "./Footer";
+import Footer from "./footer";
 
 export default function ContactSection() {
   return (
